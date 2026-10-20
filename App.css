@@ -1,0 +1,181 @@
+.header {
+  background-color: #174c3c;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.header p {
+  margin-bottom: 5px;
+}
+
+.navbar {
+  background-color: #10372d;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.navbar a:hover {
+  background-color: #38765d;
+  border-radius: 5px;
+}
+
+.welcome {
+  text-align: center;
+  padding: 45px 20px;
+  background-color: #f3f8f4;
+}
+
+.welcome p {
+  max-width: 750px;
+  margin: 15px auto;
+  line-height: 1.7;
+}
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section h2,
+.welcome h2 {
+  color: #174c3c;
+}
+
+.light {
+  background-color: #f3f8f4;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 25px auto 0;
+}
+
+.card {
+  background-color: white;
+  padding: 22px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card h3 {
+  color: #174c3c;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+.book-card {
+  border-top: 4px solid #d9a441;
+}
+
+.book-icon {
+  font-size: 35px;
+  text-align: center;
+}
+
+.contact-info {
+  margin: 20px auto;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 550px;
+  margin: 25px auto;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #174c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 13px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #28684f;
+}
+
+.error {
+  color: #c62828;
+  margin: 0;
+  font-size: 14px;
+}
+
+.success {
+  color: #176b39;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #10372d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 30px 15px;
+  }
+}
